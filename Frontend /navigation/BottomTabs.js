@@ -35,3 +35,18 @@ export default function BottomTabs() {
     </Tab.Navigator>
   );
 }
+import { Ionicons } from '@expo/vector-icons';
+
+<TouchableOpacity
+  style={{
+    position: 'absolute',
+    bottom: 20,
+    right: 20,
+    backgroundColor: '#00f2ff',
+    borderRadius: 50,
+    padding: 15,
+  }}
+  onPress={() => navigation.navigate('Chatbot')}
+>
+  <Ionicons name="chatbubble-outline" size={24} color="#000" />
+</TouchableOpacity>;
