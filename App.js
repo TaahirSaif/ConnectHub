@@ -23,3 +23,10 @@ app.use('/api/analytics', analyticsRoutes);
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
 });
+const express = require('express');
+const { chatbotResponse } = require('./chatbotController');
+const router = express.Router();
+
+router.post('/api/chatbot', chatbotResponse);
+
+module.exports = router;
